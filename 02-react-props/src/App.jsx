@@ -1,36 +1,27 @@
 import './App.css'
+import cinco from './assets/img/cinco.jpg'
+import cuatro from './assets/img/cuatro.jpg'
+import dos from './assets/img/dos.jpg'
+import seis from './assets/img/seis.jpg'
+import tres from './assets/img/tres.jpg'
+import uno from './assets/img/uno.jpg'
+import ilustracion from './assets/img/ilustracion.svg'
 
+import Header from './components/header'
+import Seccion1 from './components/Seccion1'
 function App () {
   return (
     <>
-      <header className='hero'>
-        <div className='textos-hero'>
-          <h1>Bienvenido a Website</h1>
-          <p>Creamos el mejor sitio web para ti</p>
-          <a href='#contacto'>Contactame</a>
-        </div>
-        <div className='svg-hero' style={{ height: '150px', overflow: 'hidden' }}>
-          <svg
-            viewBox='0 0 500 150' preserveAspectRatio='none'
-            style={{ height: '100%', width: '100%' }}
-          >
-            <path
-              d='M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z'
-              style={{ stroke: 'none', fill: '#fff' }}
-            />
-          </svg>
-        </div>
-      </header>
-      <section className='wave-contenedor website'>
-        <img src='img/ilustracion1.svg' alt='' />
-        <div className='contenedor-textos-main'>
-          <h2 className='titulo left'>Title of section</h2>
-          <p className='parrafo'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt enim reiciendis
-            molestias nam tempore. Ullam hic accusantium eligendi ipsam corrupti!
-          </p>
-          <a href='' className='cta'>Learn more</a>
-        </div>
-      </section>
+      <Header
+        titulo='Hola desde JSX'
+        desc='Acabamos de aprender como pasar de HTML a JSX y hacerlo mas "dinamico" con PROPS'
+        boton='Contáctame'
+      />
+      <Seccion1
+        titulo='Hola desde JSX'
+        parrafo='Acabamos de aprender como pasar de HTML a JSX y hacerlo mas "dinamico" con PROPS'
+        textoBoton='Contáctame'
+      />
       <section className='info'>
         <div className='contenedor'>
           <h2 className='titulo left'>Juntos podemos apoyar</h2>
@@ -64,12 +55,12 @@ function App () {
         <div className='contenedor'>
           <h2 className='titulo'>Our work</h2>
           <article className='galeria-cont'>
-            <img src='img/uno.jpg' alt='' />
-            <img src='img/dos.jpg' alt='' />
-            <img src='img/tres.jpg' alt='' />
-            <img src='img/cuatro.jpg' alt='' />
-            <img src='img/cinco.jpg' alt='' />
-            <img src='img/seis.jpg' alt='' />
+            <img src={uno} alt='' />
+            <img src={dos} alt='' />
+            <img src={tres} alt='' />
+            <img src={cuatro} alt='' />
+            <img src={cinco} alt='' />
+            <img src={seis} alt='' />
           </article>
         </div>
       </section>
@@ -80,18 +71,18 @@ function App () {
             <p className='parrafo'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum reprehenderit nostrum expedita quasi odio architecto laudantium sunt nemo dicta atque?</p>
             <a href='' className='cta'>Learn more</a>
           </div>
-          <img src='img/ilustracion.svg' alt='' />
+          <img src={ilustracion} alt='' />
         </div>
         <div className='svg-wave' style={{ height: '150px', overflow: 'hidden' }}><svg
           viewBox='0 0 500 150' preserveAspectRatio='none'
           style={{ height: '100%', width: '100%' }}
-                                                                                                                                                        >
+                                                                                  >
           <path
             d='M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z'
             style={{ stroke: 'none', fill: '#F5576C' }}
           />
 
-      </svg>
+                                                                                  </svg>
         </div>
       </section>
       <footer id='contacto'>
